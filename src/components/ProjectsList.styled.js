@@ -4,7 +4,6 @@ import styled from "styled-components";
 export const StyledDiv = styled.div`
 background-color: #ecf0f3;
 margin-left: 300px;
-height: 100%;
 
 `
 

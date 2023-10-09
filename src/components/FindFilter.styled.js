@@ -8,7 +8,7 @@ display: flex;
 flex-direction: row;
 align-items: center;
 /* width: 100%; */
-height: 114px;
+height: 107px;
 background-color: white;
 padding-left: 50px;
 /* padding-right: 200px; */
