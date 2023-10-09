@@ -17,6 +17,7 @@ padding-left: 50px;
 }
 `
 
+
 export const StyledInput = styled.input`
 margin-left: 10px;
 width: 300px;
