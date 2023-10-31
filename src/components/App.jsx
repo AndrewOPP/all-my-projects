@@ -57,23 +57,23 @@ const projects = [
     title: 'ImageFinder',
     category: 'Mini-Projects',
     gitHub: 'https://github.com/AndrewOPP/ImageFinder',
-    livePage: 'https://andrewopp.github.io/ImageFinder/',
-    keyWords: ['HTML', ' CSS', 'JS'],
+    livePage: 'https://andrewopp.github.io/goit-react-hw-04-image-finder/',
+    keyWords: ['React'],
     id: 'id-7',
   },
   {
     title: 'PhoneBook',
     category: 'Solo Components',
-    gitHub: 'https://github.com/AndrewOPP/goit-react-hw-02-phonebook',
-    livePage: 'https://andrewopp.github.io/goit-react-hw-02-phonebook/',
+    gitHub: 'https://github.com/AndrewOPP/goit-react-hw-04-phonebook',
+    livePage: 'https://andrewopp.github.io/goit-react-hw-04-phonebook/',
     keyWords: ['React'],
     id: 'id-8',
   },
   {
     title: 'Feedback',
     category: 'Solo Components',
-    gitHub: 'https://github.com/AndrewOPP/goit-react-hw-02-feedback',
-    livePage: 'https://andrewopp.github.io/goit-react-hw-02-feedback/',
+    gitHub: 'https://github.com/AndrewOPP/goit-react-hw-04-feedback',
+    livePage: 'https://andrewopp.github.io/goit-react-hw-04-feedback/',
     keyWords: ['React'],
     id: 'id-9',
   },
@@ -91,6 +91,11 @@ export class App extends Component {
     });
   };
 
+  addProject = newProject => {
+    this.setState({
+      projects: [...projects, newProject],
+    });
+  };
   // ProjectsListMarkUp = key => {};
 
   render() {
@@ -103,7 +108,7 @@ export class App extends Component {
           />
         </div>
         <MainDiv>
-          <FindFilter />
+          <FindFilter onAddProject={this.addProject} />
           <ProjectsList
             filterWord={this.state.filterWord}
             projects={this.state.projects}
