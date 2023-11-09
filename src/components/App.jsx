@@ -37,6 +37,15 @@ const projects = [
     keyWords: ['HTML', ' CSS'],
     id: 'id-4',
   },
+
+  {
+    title: 'Tic Tac Toe Game',
+    category: 'Mini-Projects',
+    gitHub: 'https://github.com/AndrewOPP/Tic-Tac-Toe',
+    livePage: 'https://andrewopp.github.io/Tic-Tac-Toe/',
+    keyWords: ['React'],
+    id: 'id-4',
+  },
   {
     title: 'GitHubApp',
     category: 'Mini-Projects',
